@@ -1,0 +1,28 @@
+@charset "UTF-8"; /*Caso haja problemas com acentuação*/ 
+body{ 
+    background-image: linear-gradient(to bottom, #a1cdf7, #6b8aa7, #003F7A);
+    background-attachment: fixed;
+    margin-left: 35px;
+}
+hr{
+    margin-left: -35px;
+}
+a{
+   color: rgb(77, 81, 105);
+   text-decoration: none
+}
+h2,p,li, dl{
+    margin-left: 15px;
+    font-family: arial;
+    color: white;
+    font-size: 18px;
+}
+h1{
+font-family: arial;
+color: white;
+}
+
+a:hover{
+   color:white;
+   animation-delay: initial;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Page 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Principais formatações HTML</h1>
+        <h2>Negrito / Destaque</h2>
+        <p>
+            Nesta frase está um exemplo de <abbr title="<b>"><b>Negrito</b></abbr> e um exemplo em <abbr title="<strong>"><strong>Destaque</strong></abbr>
+        </p>
+
+        <h2>Itálico / Ênfase</h2>
+        <p>
+            Nesta frase está um exemplo de <abbr title="<i>"><i>Itálico</i></abbr> e um exemplo de <abbr title="<em>"><em>Ênfase</em></abbr>
+        </p>
+
+        <h2>Marcador de Texto</h2>
+        <p>
+            Nesta frase está um exemplo de um <abbr title="<mark>">
+                <mark style="background-color: rgb(235, 226, 113);">Texto Marcado</mark>
+            </abbr>
+        </p>
+
+        <h2>Código-Fonte</h2>
+        <p>
+            O comando <abbr title="<code>"><code>document.getElementById('teste')</code></abbr> é escrito em JavaScript
+        </p>
+        <!--Caso seja escrito algum código identado, para não perder a identação basta inserir a tag <pre>-->
+        
+        <h2>Abreviações</h2>
+        <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr> em programação Web</p>
+    <hr>
+    <h1>Listas OL e UL</h1>
+        <h2>Listas Ordenadas <abbr title="<ol> / <li>">(?)</abbr></h2> 
+        <ol type="1">
+            <li>Acordar</li>
+            <li>Tomar Café</li>
+            <li>Escovar os dentes</li>
+            <li>Estudar</li>
+        </ol>
+
+        <h2>Listas não odernadas <abbr title="<ul> / <li>">(?)</abbr></h2>
+        <ul type="disc"> <!--Outras opções de type: circle e square-->
+            <li>banana</li>
+            <li>maçã</li>
+            <li>pera</li>
+            <li>abacaxi</li>
+        </ul>
+
+        <h2>LIstas de Definições <abbr title="<dl> / <dt> / <dd>">(?)</abbr></h2>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+            <dt>CSS</dt>
+            <dd>Linguagem de marcação para a criação de design de um site.</dd>
+            <dt>JavaScript</dt>
+            <dd>Linguagem de programação para a criação de interativdade de um site.</dd>
+        </dl>
+    <hr>
+    <h1>Links</h1>
+        <h2>Externos</h2>
+        <ul>
+            <li>
+                <img src="img/lknd-16x16.png" alt="linkedin"> Clique <a href="https://www.linkedin.com/in/gustavo-martin-lennert-489a30180/" target="_blank" rel="external"><strong>aqui</strong></a> para acessar meu perfil no Linkedin.
+            </li>
+            <br>                 
+            <li>
+                <img src="img/youtube-16x16.png" alt="youtube"> Clique <a href="https://www.youtube.com/" target="_blank" rel="nofollow"><strong>aqui</strong></a> para acessar o Youtube.
+            </li>
+        </ul>
+
+        <h2>Internos</h2>
+        <ul>
+            <li>
+                <img src="img/2-16x16.png" alt="2"> Clique <a href="pag2.html" rel="next" target="_self"><strong>aqui</strong></a> para acessar a segunda página do site.
+            </li>
+            <br>
+            <li>
+                <img src="img/3-16x16.png" alt="3"> Clique <a href="terceira pag-teste/pag3.html" rel="next" target="_self"><strong>aqui</strong></a> para acessar a terceira página do site.
+            </li>
+        </ul>
+
+       <h2>Links para Download</h2>
+       <ul>
+            <li>
+                Clique <a href="download/boleto fone.pdf" target="_self" download="boleto fone.pdf" type="application/pdf"><strong>aqui</strong></a> para baixar um arquivo PDF
+            </li>
+            <br>
+            <li>
+                Clique <a href="download/boleto fone.zip" target="_self" download="boleto fone.zip" type="application/zip"><strong>aqui</strong></a> para baixar um arquivo .zip
+            </li>
+        </ul>
+    <hr>
+    <h1>Reprodução de Áudio</h1>
+        <p>Open Highway - Silent Partner</p>
+        <audio preload="auto" autoplay controls loop>
+            <source src="midia/Open Highway - Silent Partner.mp3" type="audio/mpeg">
+            <source src="mida/Open Highway - Silent Partner.ogg" type="audio/ogg">
+            <source src="midia/Open Highway - Silent Partner.wav" type="audio/wav">
+            <p>Infelizmente seu navegador não é consegue reproduzir áudio.</p>
+            <a href="midia/Open Highway - Silent Partner.mp3"> Clique aqui para baixar o arquivo MP3.</a>
+        </audio> 
+        <p>Stomp It Away - Silent Partner</p>
+        <audio preload="auto" autoplay controls loop>
+            <source src="midia/Stomp It Away - Silent Partner.mp3" type="audio/mpeg">
+            <source src="midia/Stomp It Away - Silent Partner.ogg" type="audio/ogg">
+            <source src="midia/Stomp It Away - Silent Partner.wav" type="audio/wav">
+            <p>Infelizmente seu navegador não é consegue reproduzir áudio.</p>
+            <a href="midia/Stomp It Away - Silent Partner.mp3"> Clique aqui para baixar o arquivo MP3.</a>
+        </audio>  
+        
+    <hr>
+    <h1>Reprodução de Vídeo</h1>
+        <video  width="600" poster="midia/foto-video.png" controls>
+            <source src="midia/video-site.m4v" type="video/m4v">
+            <source src="midia/video-site.webm" type="video/webm">
+            <source src="midia/video-site.ogv" type="video/ogv">
+            <source src="midia/video-site.mp4" type="video/mp4">
+        </video> 
+</body>
+</html>
